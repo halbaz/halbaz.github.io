@@ -1,0 +1,105 @@
+/* Reset margin and padding for all elements */
+body {
+    background-color: #d6e6f5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 2em;
+}
+
+header {
+    background-color: #00002e;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+}
+
+/* Styling for the contact section */
+
+#contact a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact {
+    margin-top: 2em;
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Separate the details and photo */
+    align-items: center; /* Vertically align the details and photo */
+}
+
+.details {
+    flex: 1; /* Take half the space of the #contact section */
+    padding-right: 2em; /* Add some spacing between the details and photo */
+    text-align: left; /* Align text to left */
+}
+
+#photo {
+    flex: 1; /* Take half the space of the #contact section */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#photo img {
+    max-width: 300px; /* Adjusted size */
+    max-height: 300px; 
+    border-radius: 5%; 
+    border: 1px solid #00002e;
+    box-shadow: 0px 0px 10px rgba(23, 1, 121, 0.5);
+}
+
+section {
+    margin-top: 2em;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px rgba(23, 1, 121, 0.3);
+    width: 80%;
+    margin-left: auto; /* Centers the sections horizontally */
+    margin-right: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #020253;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    /* color: #333; */
+    color: #00008B
+}
+
+ul {
+    list-style-type: square; /* Change from circle to square */
+    padding-left: 1.5em;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+/* Styling for the links inside Greatest Innovation and email section */
+#greatestInnovation a,
+#contact .details a {
+    text-decoration: none;      /* No underline by default */
+    color: inherit;             /* Inherits the default color of the parent element */
+}
+
+/* Hover effect for the links inside Greatest Innovation and email section */
+#greatestInnovation a:hover,
+#contact .details a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #00008B;                /* Change color to grey on hover */
+}
